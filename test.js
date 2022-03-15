@@ -11,5 +11,15 @@ function result() {
                 }
 		});
 	}
-	console.log(score)
+	var mark = 2
+	if (score >= 5){
+		mark++
+	}
+	if (score >= 7){
+		mark++
+	}
+	if (score >= 9){
+		mark++
+	}
+	alert('Вы набрали '+score+" баллов из 10. Оценка: "+mark)
 }
