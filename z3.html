@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+     <head>
+<title>Задание 1</title>
+<meta charset="UTF-8">
+     </head>
+     <body>
+     	<form name = "form1">
+			<input type="text" name="bch" id="inputbl">
+			<input type="button" name="block" id="bl" onclick="blockbutton()" value="block">
+			<input type="button" name="unblock" id="unbl" onclick="unblockbutton()" value="unblock">
+		</form>
+		<script>
+			let elem=document.querySelector('#inputbl');
+			function blockbutton(){
+				elem.disabled=true;
+			}
+			function unblockbutton(){
+				elem.disabled=false;
+			}
+		</script>
+
+
+	</body>	
+

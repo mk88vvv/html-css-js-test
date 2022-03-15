@@ -1,0 +1,150 @@
+body{
+	margin: 0;
+}
+header{
+	background: linear-gradient(95deg, #1E90FF, orange);
+	width: 100%;
+	height: 150px;
+	text-align: center;
+	line-height: 70px;
+	border-top:0 ;
+	border-right:0 ;
+	border-left:0 ;
+	border-bottom:5px ;
+	border-style: solid;
+	border-color: black;
+	font-size: 22pt;
+}
+.hapkafoto1{
+	width: 145px;
+	height: 130px;
+	position:absolute;
+	left: 1px;
+	top: 10px;
+}
+.hapkafoto2{
+	width: 105px;
+	height: 130px;
+	position:absolute;
+	right: 16px;
+	top: 10px;
+}
+h1{
+	display: inline;
+}
+h2{
+	margin: 0;
+	line-height: 70px;
+	font-size: 22pt;
+}
+section{
+	width: 25%;
+	height: 500px;
+	background: linear-gradient(-25deg,orange,#f5ff52,#1E90FF);
+	float:left; 
+	border-right:3px solid black;
+	border-bottom:3px solid black ;
+}
+.sf{
+	margin-left: 10px;
+}
+main{
+	width: 100%;
+	height: 2300px;
+	background: linear-gradient(45deg,#1E90FF, orange);
+}
+p{
+	text-align: justify;
+	font-size: 16pt;
+	font-family: Times New Roman;
+	margin-left: 500
+}
+hr{
+	background: linear-gradient(45deg,#1E90FF,  orange);
+	border: 0;
+	height: 4px;
+}
+.primer{
+	width: 500px;
+	height: 175px;
+	border: 2px solid black;
+	border-radius: 3px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.primer2{
+	width: 600px;
+	height: 500px;
+	border: 2px solid black;
+	border-radius: 3px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul{
+	font-size: 16pt;
+	font-family: Times New Roman;
+}
+.primerdva{
+	text-align: center;
+}
+.s4 {
+	font-size: 18pt;
+   color: #5a35ff;
+   line-height: 1.2;
+   position: relative;
+   padding: 0 14px;
+   text-transform: uppercase;
+   text-decoration: none;
+}
+.s4:after {
+	font-size: 18pt;
+   content: "";
+   height: 100%;
+   min-width: 4px;
+   background: #5a35ff;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   transition: .5s;
+   text-decoration: none;
+}
+.s4:hover:after {
+	font-size: 18pt;
+   min-width: 100%;
+   background: #5a35ff;
+   opacity: .35;
+   text-decoration: none;
+}
+footer{
+	margin: 0;
+	width: 100%;
+	height: 100px;
+	background: black ;
+	text-align: center;	
+	font-size: 16pt;
+	color: white;
+}
+h3{
+	margin: 0;
+	margin-left: 500;
+}
+
+.impt{
+	margin-left:500;
+}
+
+.impt1{
+	margin-left:20;
+}
+.btn{
+	width: 100px;
+	margin-left: 500;
+}
+.timermargin{
+	margin-right: 500;
+	font-size: 14pt;
+	float:right;
+	width: 9%;
+}
