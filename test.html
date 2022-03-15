@@ -30,26 +30,43 @@
 			<img src="testfoto.png" width="80" height="70">
 		</section>
 		<h2>Тест на тему "Что такое HTML и CSS"</h2>
-		<input type="text" name="timer6" class="timermargin">
-		<script src="test.js"></script>
+		<form name="form1">	
+		<input type="text" name="timer6" class="timermargin" value=" ">
+		</form>
+		<script type="text/javascript">
+			for (i=1;i<11;i++){
+				let seconds6=document.form1.timer6.value;
+				document.form1.timer6.value=28;
+				let timerId = setInterval(function timer1(){
+					document.form1.timer6.value=++seconds6;
+					if (seconds6==30){
+						seconds6=0;
+						document.querySelector('#idq11').disabled=true;
+						document.querySelector('#idq12').disabled=true;
+						document.querySelector('#idq13').disabled=true;
+						document.querySelector('#idq14').disabled=true;
+					}
+				},1000);
+			}
+		</script>
 		<br>
 		<h3>Вопрос 1</h3>
 		<br>
 		<p>Что такое HTML?</p>
-		<input type="radio" class="impt1" name='q1' >Язык программирования сайтов
+		<input type="radio" class="impt1" name='q1' id="idq11">Язык программирования сайтов
 		<br>
-		<input type="radio" class="impt1" name='q1'>Стандарт сайтов
+		<input type="radio" class="impt1" name='q1' id="idq12">Стандарт сайтов
 		<br>
-		<input type="radio" class="impt1" name='q1'>Протокол безопасности сайта
+		<input type="radio" class="impt1" name='q1' id="idq13">Протокол безопасности сайта
 		<br>
-		<input type="radio" class="impt1" name='q1' value='1'>Набор правил стуркурирования данных
+		<input type="radio" class="impt1" name='q1' id="idq14">Набор правил стуркурирования данных
 		<br><br>
 		<h3>Вопрос 2</h3>
 		<br>
 		<p>Как называются команды, которые преобразовываются в визуальные объекты?</p>
 		<input type="radio" class="impt1" name='q2'>Операнды
 		<br>
-		<input type="radio" class="impt1" name='q2' value='1'>Тэги
+		<input type="radio" class="impt1" name='q2'>Тэги
 		<br>
 		<input type="radio" class="impt1" name='q2'>Функции
 		<br>
@@ -64,7 +81,7 @@
 		<br>
 		<input type="radio" class="impt" name='q3'>&lt;img&gt;&lt;/img&gt;
 		<br>
-		<input type="radio" class="impt" name='q3' value='1'>&lt;img src=''&gt;
+		<input type="radio" class="impt" name='q3'>&lt;img src=''&gt;
 		<br><br>
 		<h3>Вопрос 4</h3>
 		<br>
@@ -73,14 +90,14 @@
 		<br>
 		<input type="radio" class="impt" name='q4'>Таблицы
 		<br>
-		<input type="radio" class="impt" name='q4' value='1'>Базу данных
+		<input type="radio" class="impt" name='q4'>Базу данных
 		<br>
 		<input type="radio" class="impt" name='q4'>Формы
 		<br><br>
 		<h3>Вопрос 5</h3>
 		<br>
 		<p>Что такое CSS?</p>
-		<input type="radio" class="impt" name='q5' value='1'>Язык описания внешнего вида
+		<input type="radio" class="impt" name='q5'>Язык описания внешнего вида
 		<br>
 		<input type="radio" class="impt" name='q5'>Язык программирования сайта
 		<br>
@@ -97,28 +114,15 @@
 		<br>
 		<input type="radio" class="impt" name='q6'>Case Some Styles
 		<br>
-		<input type="radio" class="impt" name='q6' value='1'>Cascading Style Sheets
+		<input type="radio" class="impt" name='q6'>Cascading Style Sheets
 		<br>
-		<!-- <script type="text/javascript">
-			var date= new Date()
-			document.timer6.value=0;
-			let seconds6=document.timer6.value;
-				let timerId = setInterval(function timer1(){
-				document.timer6.value=++seconds6;
-				if(seconds==60){
-					seconds=+1
-					document.timer.value=++seconds6;	
-				}
-			},1000);
-		</script> -->
-		<!-- <input type="text" name="timer6" class="timermargin" > -->
 		<br>
 		<h3>Вопрос 7</h3>
 		<br>
 		<p>Что <b>не относится</b> к оформлению через CSS?</p>
 		<input type="radio" class="impt" name='q7'>Цвета
 		<br>
-		<input type="radio" class="impt" name='q7' value='1'>Таймер
+		<input type="radio" class="impt" name='q7'>Таймер
 		<br>
 		<input type="radio" class="impt" name='q7'>Шрифты
 		<br>
@@ -133,7 +137,7 @@
 		<br>
 		<input type="radio" class="impt" name='q8'>#
 		<br>
-		<input type="radio" class="impt" name='q8' value='1'>.
+		<input type="radio" class="impt" name='q8'>.
 		<br><br>
 		<h3>Вопрос 9</h3>
 		<br>
@@ -144,7 +148,7 @@
 		<br>
 		<input type="radio" class="impt" name='q9'>f-f:
 		<br>
-		<input type="radio" class="impt" name='q9' value='1'>font-family: 
+		<input type="radio" class="impt" name='q9'>font-family: 
 		<br><br>
 		<h3>Вопрос 10</h3>
 		<br>
@@ -153,11 +157,12 @@
 		<br>
 		<input type="radio" class="impt" name='q10'>50%
 		<br>
-		<input type="radio" class="impt" name='q10' value='1'>1%
+		<input type="radio" class="impt" name='q10'>1%
 		<br> 
 		<input type="radio" class="impt" name='q10'>85%
 		<br><br>
-		<button type="button" onclick="result()">Сдать тест</button>
+		<input type="button" class="btn" value="Сдать тест">
+
 	</main>
 	<footer>
 		<h3>Работу выполнили</h3>
